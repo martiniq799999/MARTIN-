@@ -1,8 +1,8 @@
 local Configs_HUB = { 
   Cor_Hub = Color3.fromRGB(0, 0, 0), 
   Cor_Options = Color3.fromRGB(0, 0, 0), 
-  Cor_Stroke = Color3.fromRGB(255, 0, 0), 
-  Cor_Text = Color3.fromRGB(255, 0, 0), 
+  Cor_Stroke = Color3.fromRGB(0, 64, 255), 
+  Cor_Text = Color3.fromRGB(0, 64, 255), 
   Cor_DarkText = Color3.fromRGB(240, 240, 240), 
   Corner_Radius = UDim.new(0, 15), 
   Text_Font = Enum.Font.FredokaOne 
@@ -49,9 +49,9 @@ local function Stroke(parent, props)
   
   local gradient = Instance.new("UIGradient")
   gradient.Color = ColorSequence.new{
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 0, 0)),
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 64, 255)),
     ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0, 0, 0)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 0, 0))
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 64, 255))
   }
   gradient.Rotation = 0
   gradient.Parent = new
